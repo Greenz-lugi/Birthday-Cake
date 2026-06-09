@@ -1,32 +1,36 @@
 # Birthday-Cake
-To the best Mom 
+For Mama's Birthday
 
 
 # 🎂 Happy Birthday Mama
 
 ## Files
 ```
-birthday_cam.py          ← main Python script (Experimenting with OpenCV)
-birthday_blow.ino        ← where the hardware connects with the software
-cake_with_candle.png     ← A picture of a birthday cake with candles
-cake_blown.png           ← Same photo but with candles turned off
+birthday_cam.py          // main Python script (Experimenting with OpenCV)
+birthday_blow.ino        // where the hardware connects with the software
+cake_with_candle.png     // A picture of a birthday cake with candles
+cake_blown.png           // Same photo but with candles turned off
 ```
 
----
+## 1. The Software
 
-## 1. Setting up Python
+```
+For the code/understanding what's going on, go to the files.
+I put comments explaining the code and the thought process.
+
+This was a unique project for me because it was the first time hardware and software blended in together, so having to learn along the way with Python and combining it with the C++ code for the hardware was unique and new to me.
+```
 
 ```bash
+// Note: you'll have to install OpenCV to use the code
 pip install opencv-python pyserial numpy
 ```
 
----
+## Arduino Setup
 
-## 2. Arduino Setup
-
-### Hardware needed
-- Arduino Uno (or Nano / Mega)
-- KY-038 sound sensor module (cheap, ~$2 on Amazon)
+### Hardware used:
+- Arduino Uno 
+- KY-038 sound sensor
 
 ### Wiring
 | Sensor Pin | Arduino Pin |
@@ -35,57 +39,19 @@ pip install opencv-python pyserial numpy
 | GND        | GND         |
 | DO         | Pin 2       |
 
-### Upload the sketch
-1. Open `birthday_blow.ino` in Arduino IDE
-2. Select your board and port (Tools → Port)
-3. Upload
-4. Open Serial Monitor at **9600 baud** — blow into the mic, you should see `BLOW`
-5. Adjust the **blue potentiometer** on the sensor until it triggers reliably on a blow but not on quiet breathing
+```
+As for the wiring, you can be creative with your setup.
+I had it where the lights turned off alongside the candles.
 
----
-
-## 3. Configure the Python Script
-
-Open `birthday_cam.py` and set your serial port at the top:
-
-```python
-SERIAL_PORT = "COM3"         # Windows
-# SERIAL_PORT = "/dev/ttyUSB0"   # Linux
-# SERIAL_PORT = "/dev/cu.usbmodem14101"  # Mac
+Just note that you'll need a 220 Ω resistor between your led and where your power comes from.
 ```
 
----
-
-## 4. Cake Images
-
-You need two transparent PNG files in the same folder as the script:
-
-| File | Description |
-|------|-------------|
-| `cake_with_candle.png` | Cake with a lit candle (~200×200px, transparent background) |
-| `cake_blown.png`       | Same cake with candle blown out (smoke wisp optional!) |
-
-**Easy options:**
-- Search "birthday cake PNG transparent" on Google Images or [pngwing.com](https://www.pngwing.com)
-- Use any image editor (Canva, Photoshop, even Paint 3D) to make simple versions
-- If images are missing, the app falls back to text placeholders so it still works!
-
----
-
-## 5. Run It
-
-```bash
-python birthday_cam.py
-```
-
-### Keyboard shortcuts (while running)
+## Keyboard shortcuts (while running)
 | Key | Action |
 |-----|--------|
 | `B` | Simulate a blow (test without Arduino) |
 | `R` | Reset — relight the candle |
 | `Q` | Quit |
-
----
 
 ## How It Works
 
@@ -105,22 +71,4 @@ Python serial thread
        └─ shows "Wish granted!" flash
 ```
 
----
-
-## Troubleshooting
-
-**Serial port not found**
-- Check Device Manager (Windows) or `ls /dev/tty*` (Mac/Linux)
-- Make sure Arduino IDE is closed (it locks the port)
-
-**Face not detecting**
-- Make sure you have good lighting
-- Adjust `FACE_NEIGHBORS` (lower = more sensitive, more false positives)
-
-**Sensor triggers too easily / not enough**
-- Turn the blue potentiometer on the KY-038 slowly
-- Clockwise = less sensitive, Counter-clockwise = more sensitive
-
----
-
-Happy Birthday! 🎉
+And that's how I made my mother's birthday cake!!
