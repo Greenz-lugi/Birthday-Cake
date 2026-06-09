@@ -1,20 +1,20 @@
 # Birthday-Cake
-To the best mom, birthday cake for her to blow and see it on the computer. It'll use Arduino and Python.
+To the best Mom 
 
 
-# 🎂 Happy Birthday Mom — Setup Guide
+# 🎂 Happy Birthday Mama
 
 ## Files
 ```
-birthday_cam.py          ← main Python script
-birthday_blow.ino        ← Arduino sketch
-cake_with_candle.png     ← YOU provide this (see below)
-cake_blown.png           ← YOU provide this (see below)
+birthday_cam.py          ← main Python script (Experimenting with OpenCV)
+birthday_blow.ino        ← where the hardware connects with the software
+cake_with_candle.png     ← A picture of a birthday cake with candles
+cake_blown.png           ← Same photo but with candles turned off
 ```
 
 ---
 
-## 1. Python Setup
+## 1. Setting up Python
 
 ```bash
 pip install opencv-python pyserial numpy
