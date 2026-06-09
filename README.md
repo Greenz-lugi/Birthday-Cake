@@ -4,7 +4,7 @@ For Mama's Birthday
 
 # 🎂 Happy Birthday Mama
 
-## Files
+## Overview of what's in my repo
 ```
 birthday_cam.py          // main Python script (Experimenting with OpenCV)
 birthday_blow.ino        // where the hardware connects with the software
