@@ -12,7 +12,7 @@ cake_with_candle.png     // A picture of a birthday cake with candles
 cake_blown.png           // Same photo but with candles turned off
 ```
 
-## 1. The Software
+## The Software
 
 ```
 For the code/understanding what's going on, go to the files.
@@ -27,7 +27,7 @@ I learned along the way with Python and combined it with the C++ code for the ha
 pip install opencv-python pyserial numpy
 ```
 
-## Arduino Setup
+## The Hardware
 
 ### Hardware used:
 - Arduino Uno 
