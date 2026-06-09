@@ -4,6 +4,9 @@ For Mama's Birthday
 
 # 🎂 Happy Birthday Mama
 
+https://github.com/user-attachments/assets/859c477e-7748-4240-ab63-e5b3f8150e85
+
+
 ## Overview of what's in this repo
 ```
 birthday_cam.py          // main Python script (Experimenting with OpenCV)
