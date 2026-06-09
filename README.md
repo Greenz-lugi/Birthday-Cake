@@ -18,11 +18,12 @@ cake_blown.png           // Same photo but with candles turned off
 For the code/understanding what's going on, go to the files.
 I put comments explaining the code and the thought process.
 
-This was a unique project for me because it was the first time hardware and software blended in together, so having to learn along the way with Python and combining it with the C++ code for the hardware was unique and new to me.
+This was a unique project for me because it was the first time hardware and software blended.
+I learned along the way with Python and combined it with the C++ code for the hardware.
 ```
 
-```bash
 // Note: you'll have to install OpenCV to use the code
+```bash
 pip install opencv-python pyserial numpy
 ```
 
@@ -43,7 +44,7 @@ pip install opencv-python pyserial numpy
 As for the wiring, you can be creative with your setup.
 I had it where the lights turned off alongside the candles.
 
-Just note that you'll need a 220 Ω resistor between your led and where your power comes from.
+Just note that you'll need a 220 Ω resistor between your LED and the power source.
 ```
 
 ## Keyboard shortcuts (while running)
