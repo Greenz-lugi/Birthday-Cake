@@ -43,6 +43,11 @@ pip install opencv-python pyserial numpy
 | GND        | GND         |
 | DO         | Pin 2       |
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/48b76eba-3c20-4886-af10-14a33376ea9b" width="49%" />
+  <img src="https://github.com/user-attachments/assets/2c62a1b0-48f9-4958-906d-d0ef26877038" width="49%" />
+</p>
+
 ```
 As for the wiring, you can be creative with your setup.
 I had it where the lights turned off alongside the candles.
